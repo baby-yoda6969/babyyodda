@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>For You</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="sky" aria-hidden="true"></canvas>
+
+  <button type="button" class="music" id="music" aria-label="Play music" aria-pressed="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M9 17.5a2.5 2.5 0 1 1-2-2.45V6.8l10-2.2v8.45a2.5 2.5 0 1 1-2-2.45V7.2l-6 1.32v8.98z"/>
+    </svg>
+  </button>
+
+  <section class="letter" id="letter" hidden>
+    <div id="words"></div>
+    <div class="photos" id="photos"></div>
+    <p class="clock" id="clock">
+      <span id="clock-lead"></span>
+      <span id="clock-time"></span>
+    </p>
+  </section>
+
+  <div class="gate" id="gate">
+    <button type="button" class="open" id="open">
+      <svg class="heart-icon" viewBox="0 0 24 22" aria-hidden="true">
+        <path fill="currentColor" d="M12 20.6S2.4 14.2.7 8.7C-.4 5.2.6 1.9 3.6.7 6.1-.3 8.4.4 9.8 2.2L12 4.7l2.2-2.5C15.6.4 17.9-.3 20.4.7c3 1.2 4 4.5 2.9 8-1.7 5.5-11.3 11.9-11.3 11.9z"/>
+      </svg>
+      <span class="hint">click here</span>
+    </button>
+  </div>
+
+  <script src="story.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
